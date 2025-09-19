@@ -6,6 +6,7 @@ import SubtaskForm from "../components/subtask/SubtaskForm";
 import "./Detail.css";
 import Header from "../components/header/header";
 import TodoManager from "../components/todo/TodoManager";
+import Sidebar from "../components/sidebar/Sidebar";
 
 // 더미 데이터 (실제로는 Firebase에서 가져올 데이터)
 const getDummyProjectData = (projectId) => ({
@@ -224,12 +225,12 @@ function ProjectDetail() {
 
   return (
     <div className="App">
-    <div className="body-detail">
         <div className="container-detail">
             {/* 이 부분을 '지우고' sidebar컴포넌트를 넣는다. */}
             {/* 단, sidebar 컴포넌트 전체를 감싼 div태그 className은 무조건 sidebar로 할 것 */}
-            <aside className="sidebar-detail">
-            </aside>
+            <div className="sidebar-detail">
+                <Sidebar />
+            </div>
 
             <div className="main-wrapper-detail">
                 <Header onAddClick={handleAddClick}/>    
@@ -273,7 +274,6 @@ function ProjectDetail() {
                 )}
             </div>
         </div>
-    </div>
     </div>
   );
 }

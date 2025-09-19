@@ -329,10 +329,7 @@ function Home() {
 
       {/* 게임 스타일 사이드바 */}
       <div className="sidebar-container">
-        <Sidebar 
-          onAddProject={() => setShowForm(true)}
-          projects={projects} 
-        />   
+        <Sidebar  />   
       </div>
 
       {/* 메인 콘텐츠 영역 */}

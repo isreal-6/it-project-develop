@@ -2,7 +2,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 /* 기본 바디 스타일 */
-.body-detail{
+.App{
   font-family: 'Noto Sans KR', sans-serif;
   background: #0A0F33;
   color: white;
@@ -12,13 +12,14 @@
 /* 레이아웃 */
 .container-detail {
   display: grid;
-  grid-template-columns: 15% 1fr;   /* 좌측 15%, 나머지 */
+  grid-template-columns: 65px 1fr;   /* 좌측 15%, 나머지 */
   height: 100vh;
 }
 
 /* 좌측 사이드바 */
 .sidebar-detail {
   margin:20px;
+  width: 65px;
   background: #34395D;
   border: 1px solid #989898;
   border-radius: 44px; /* 둥근 모서리 */
@@ -28,6 +29,10 @@
   padding: 121px 26px; /* 내부 여백 */
 }
 
+.sidebar-detail:hover {
+  width: 250px;
+  border-radius: 20px;
+}
 
 /* 메인 영역 */
 .main-wrapper-detail {
