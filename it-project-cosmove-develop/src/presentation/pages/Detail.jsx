@@ -225,6 +225,7 @@ function ProjectDetail() {
 
   return (
     <div className="App">
+    <div className="body-detail">
         <div className="container-detail">
             {/* 이 부분을 '지우고' sidebar컴포넌트를 넣는다. */}
             {/* 단, sidebar 컴포넌트 전체를 감싼 div태그 className은 무조건 sidebar로 할 것 */}
@@ -274,6 +275,7 @@ function ProjectDetail() {
                 )}
             </div>
         </div>
+    </div>
     </div>
   );
 }
