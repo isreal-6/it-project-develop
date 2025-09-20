@@ -167,19 +167,13 @@
 .timeline-footer {
   height: 140px; /* 고정 높이 */
   padding: 0; /* 내부 컴포넌트에서 패딩 처리 */
-  background: linear-gradient(180deg, rgba(41, 41, 136, 0.575), rgba(44, 41, 255, 0.788));
+  background: none;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.517);
   border-radius: 20px;
   box-sizing: border-box;
   overflow: hidden;
   gap: 0px;
-}
-
-.timeline h3 {
-  margin: 0 0 10px 0;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
 }
 
 /* 반응형 디자인 */

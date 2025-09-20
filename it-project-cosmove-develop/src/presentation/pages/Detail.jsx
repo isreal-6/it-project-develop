@@ -6,6 +6,7 @@ import SubtaskForm from "../components/subtask/SubtaskForm";
 import "./Detail.css";
 import Header from "../components/header/header";
 import TodoManager from "../components/todo/TodoManager";
+import ProjectTimeline from "../components/project/ProjectTimeline";
 
 // 더미 데이터 (실제로는 Firebase에서 가져올 데이터)
 const getDummyProjectData = (projectId) => ({
@@ -259,7 +260,7 @@ function ProjectDetail() {
                 {/* 마찬가지로 이 부분을 '지우고' 타임라인 컴포넌트를 넣는다. */}
                 {/* 단, timeline 컴포넌트 전체를 감싼 div태그 className은 무조건 timeline로 할 것 */}
                 <footer className="timeline-detail">
-                    2024.06.20
+                    <ProjectTimeline />
                 </footer>
                 {showAddForm && (
                     <SubtaskForm
